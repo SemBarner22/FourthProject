@@ -131,10 +131,11 @@ div.login-form-box {
     border-top-right-radius: var(--border-radius);
     margin-left: auto;
     margin-right: auto;
-    width: 75%;
+    width: 90%;
 }
 
 div.login-form-box div.body {
+    position: relative;
     width: 100%;
     border: 1px solid var(--border-color);
     border-collapse: collapse;
@@ -147,22 +148,29 @@ main div.header {
     margin: 0.25rem auto 0.25rem 1rem;
 }
 
-div.field {
-    display: table;
+div.body div.field div{
+    display: inline-block;
 }
 
 div.links {
     float: right;
     margin: 0.25rem auto;
+    font-size: smaller;
 }
 
 main div.login-form-box div.footer {
     //float: right;
     margin: 0.5rem;
+    font-size: smaller;
 }
 
 main div.login-form-box div.footer a {
-//  float: right;
+  //position: absolute;
+    //top: 0.5rem;
+    //right: 0.5rem;
+   // position: fixed;
+    margin-left: 1rem;
+    //right: 1rem;
 }
 
 div.button-field {
@@ -173,4 +181,20 @@ div.button-field {
 div.checkbox-field {
     text-align: center;
     margin: 0.5rem auto;
+    font-size: smaller;
+}
+
+div.error {
+    color: red;
+    font-size: smaller;
+}
+
+div.body form {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    text-align: center;
+}
+
+form > div {
+    margin-top: 1rem;
 }
